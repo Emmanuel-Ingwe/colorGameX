@@ -18,18 +18,27 @@ var colors = [
 var squares = document.querySelectorAll(".square");
 var pickedColor = colors[3];
 var colorDisplay = document.getElementById("colorDisplay");
+var messageDisplay = document.querySelector("#message");
 
 colorDisplay.textContent = pickedColor;
 
 for (var i = 0; i < squares.length; i++) {
-    squares[i].style.backgroundColor = colors[i];
+    squares[i].style.background = colors[i];
 
-    squares[1].addEventListener("click", function () {
-        var clickedColor = this.style.backgroundColor;
+    squares[i].addEventListener("click", function () {
+        var clickedColor = this.style.background;
         if (clickedColor === pickedColor) {
-            alert("correct!");
+            messageDisplay.textContent = "Correct!";
+            changeColors(clickedColor);
         } else {
-            alert("WRONG!!!");
+            this.style.background = "#232323";
+            messageDisplay.textContent = "Try Again";
         }
     });
+}
+
+function changeColors(color) {
+    for (var i = 0; i < colors.length; i++) {
+        colors(i).style.background = color;
+    }
 }

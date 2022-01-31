@@ -18,5 +18,9 @@ body {
 
 h1 {
 	color: blanchedalmond;
-	text-align: center;
+	/* text-align: center; */
+}
+
+span {
+	color: white;
 }
