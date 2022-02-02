@@ -1,10 +1,10 @@
 console.log("Connected");
 
-for (var i = 10; i <= 20; i++) {
-    if (i % 2 !== 0) {
-        console.log(i);
-    }
-}
+// for (var i = 10; i <= 20; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(i);
+//     }
+// }
 
 var colors = [
     "rgb(255,0,0)",
@@ -14,7 +14,6 @@ var colors = [
     "rgb(0,0,255)",
     "rgb(255,0,255)"
 ];
-
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
