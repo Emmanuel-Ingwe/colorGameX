@@ -38,7 +38,7 @@ for (var i = 0; i < squares.length; i++) {
 
 function changeColors(color) {
     for (var i = 0; i < squares.length; i++) {
-        colors(i).style.background = color;
+        squares(i).style.background = color;
     }
 }
 
