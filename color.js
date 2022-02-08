@@ -35,7 +35,6 @@ for (var i = 0; i < squares.length; i++) {
         }
     });
 }
-
 function changeColors(color) {
     for (var i = 0; i < squares.length; i++) {
         squares(i).style.background = color;
@@ -43,6 +42,6 @@ function changeColors(color) {
 }
 
 function pickColor() {
-    var random = Math.floor(math.random() * colors.length);
+    var random = Math.floor(Math.random() * colors.length);
     return colors[random];
 }
