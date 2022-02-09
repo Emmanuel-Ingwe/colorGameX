@@ -9,6 +9,7 @@ body {
 	margin: 1.66%;
 	float: left;
 	border-radius: 25%;
+	cursor: pointer;
 }
 
 .container {
