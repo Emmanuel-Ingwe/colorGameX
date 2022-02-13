@@ -6,14 +6,8 @@ console.log("Connected");
 //     }
 // }
 
-var colors = [
-    "rgb(255, 0, 0)",
-    "rgb(255, 255, 0)",
-    "rgb(0, 255, 0)",
-    "rgb(0, 255, 255)",
-    "rgb(0, 0, 255)",
-    "rgb(255, 0, 255)"
-];
+var colors = generateRandomcolors(6);
+
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
@@ -45,4 +39,18 @@ function changeColors(color) {
 function pickColor() {
     var random = Math.floor(Math.random() * colors.length);
     return colors[random];
+}
+
+function generateRandomcolors(num) {
+    var arr = [];
+    for (var i = 0; i < num; i++) {
+
+    }
+    return arr;
+}
+
+function changeColors() {
+    var r = Math.random(Math.random() * 256);
+    var g = Math.random(Math.random() * 256);
+    var b = Math.random(Math.random() * 256);
 }
