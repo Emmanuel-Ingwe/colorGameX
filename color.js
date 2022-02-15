@@ -68,7 +68,7 @@ for (var i = 0; i < squares.length; i++) {
         console.log(clickedColor, pickedColor);
         if (clickedColor === pickedColor) {
             messageDisplay.textContent = "Correct!!";
-            resetButton.textContent = "play Again?";
+            resetButton.textContent = "Play Again?";
             changeColors(clickedColor);
             h1.style.background = clickedColor;
         } else {
