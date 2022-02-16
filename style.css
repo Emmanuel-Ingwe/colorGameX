@@ -34,5 +34,24 @@ h1 {
 }
 
 .selected {
-	background: blue;
+	color: oldlace;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.4s;
+	-webkit-transition: all;
+}
+
+.button:hover {
+	color: white;
+	background: steelblue;
 }
