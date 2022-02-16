@@ -14,8 +14,15 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
-var easyBtn = document.querySelector("#easyBtn");
-var hardBtn = document.querySelector("#hardBtn");
+var modeButtons = document.querySelectorAll(".mode");
+
+for (var i = 0; i < modeButtons.lenght; i++) {
+    modeButtons[i].addEventListener("click", function () {
+        modeButtons[0].classList.remove("selected");
+        modeButtons[1].classList.remove("selected");
+        this.classList.add("selected");
+    });
+}
 
 easyBtn.addEventListener("click", function () {
     hardBtn.classList.remove("selected");
