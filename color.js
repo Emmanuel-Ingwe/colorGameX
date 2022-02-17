@@ -57,7 +57,7 @@ function reset() {
     pickedColor = pickColor();
     //change colorDisplay to match picked Color
     colorDisplay.textContent = pickedColor;
-    resetButton.textContent = "New Colors";
+    this.textContent = "New Colors";
     messageDisplay.textContent = "";
     //change colors of squares
     for (var i = 0; i < squares.length; i++) {
