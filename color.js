@@ -43,7 +43,7 @@ function setupSquares() {
                 h1.style.background = clickedColor;
             } else {
                 this.style.background = "#232323";
-                messageDisplay.textContent = "Try Again";
+                messageDisplay.textContent = "Try Again!";
             }
         });
     }
@@ -57,6 +57,7 @@ function reset() {
     pickedColor = pickColor();
     //change colorDisplay to match picked Color
     colorDisplay.textContent = pickedColor;
+    colorDisplay.style.fontSize = "50px";
     this.textContent = "New Colors";
     messageDisplay.textContent = "";
     //change colors of squares
@@ -69,6 +70,13 @@ function reset() {
         }
     }
     h1.style.background = "steelblue";
+    h1.style.padding = "10px";
+    h1.style.margin = "0";
+    h1.style.textAlign = "center";
+    h1.style.fontSize = "24px";
+    h1.style.fontWeight = "200";
+    h1.style.wordSpacing = "5px";
+    h1.style.textTransform = "uppercase";
 }
 
 resetButton.addEventListener("click", function () {
